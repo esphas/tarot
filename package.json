@@ -1,0 +1,12 @@
+{
+  "name": "tarot",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "serve": "node app.js"
+  },
+  "author": "esphas <esphas@hotmail.com>",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
