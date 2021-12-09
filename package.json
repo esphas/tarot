@@ -3,7 +3,7 @@
   "private": true,
   "main": "app.js",
   "scripts": {
-    "serve": "node app.js"
+    "start": "node app.js"
   },
   "author": "esphas <esphas@hotmail.com>",
   "dependencies": {
