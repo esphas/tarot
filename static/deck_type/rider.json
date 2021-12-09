@@ -1,0 +1,578 @@
+{
+    "name": "Rider-Waite",
+    "back": "",
+    "blank": "",
+    "suits": [
+        {
+            "name": "major",
+            "cards": [
+                {
+                    "value": 0,
+                    "name": "The Fool",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 1,
+                    "name": "The Magician",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 2,
+                    "name": "The High Priestess",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 3,
+                    "name": "The Empress",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 4,
+                    "name": "The Emperor",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 5,
+                    "name": "The Hierophant",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 6,
+                    "name": "The Lovers",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 7,
+                    "name": "The Chariot",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 8,
+                    "name": "Strength",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 9,
+                    "name": "The Hermit",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 10,
+                    "name": "Wheel of Fortune",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 11,
+                    "name": "Justice",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 12,
+                    "name": "The Hanged Man",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 13,
+                    "name": "Death",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 14,
+                    "name": "Temperance",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 15,
+                    "name": "The Devil",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 16,
+                    "name": "The Tower",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 17,
+                    "name": "The Star",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 18,
+                    "name": "The Moon",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 19,
+                    "name": "The Sun",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 20,
+                    "name": "Judgement",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 21,
+                    "name": "The World",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "name": "wands",
+            "cards": [
+                {
+                    "value": 1,
+                    "name": "Ace of Wands",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 2,
+                    "name": "Two of Wands",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 3,
+                    "name": "Three of Wands",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 4,
+                    "name": "Four of Wands",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 5,
+                    "name": "Five of Wands",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 6,
+                    "name": "Six of Wands",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 7,
+                    "name": "Seven of Wands",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 8,
+                    "name": "Eight of Wands",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 9,
+                    "name": "Nine of Wands",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 10,
+                    "name": "Ten of Wands",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 11,
+                    "name": "Page of Wands",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 12,
+                    "name": "Knight of Wands",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 13,
+                    "name": "Queen of Wands",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 14,
+                    "name": "King of Wands",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "name": "pentacles",
+            "cards": [
+                {
+                    "value": 1,
+                    "name": "Ace of Pentacles",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 2,
+                    "name": "Two of Pentacles",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 3,
+                    "name": "Three of Pentacles",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 4,
+                    "name": "Four of Pentacles",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 5,
+                    "name": "Five of Pentacles",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 6,
+                    "name": "Six of Pentacles",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 7,
+                    "name": "Seven of Pentacles",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 8,
+                    "name": "Eight of Pentacles",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 9,
+                    "name": "Nine of Pentacles",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 10,
+                    "name": "Ten of Pentacles",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 11,
+                    "name": "Page of Pentacles",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 12,
+                    "name": "Knight of Pentacles",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 13,
+                    "name": "Queen of Pentacles",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 14,
+                    "name": "King of Pentacles",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "name": "cups",
+            "cards": [
+                {
+                    "value": 1,
+                    "name": "Ace of Cups",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 2,
+                    "name": "Two of Cups",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 3,
+                    "name": "Three of Cups",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 4,
+                    "name": "Four of Cups",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 5,
+                    "name": "Five of Cups",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 6,
+                    "name": "Six of Cups",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 7,
+                    "name": "Seven of Cups",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 8,
+                    "name": "Eight of Cups",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 9,
+                    "name": "Nine of Cups",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 10,
+                    "name": "Ten of Cups",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 11,
+                    "name": "Page of Cups",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 12,
+                    "name": "Knight of Cups",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 13,
+                    "name": "Queen of Cups",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 14,
+                    "name": "King of Cups",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "name": "swords",
+            "cards": [
+                {
+                    "value": 1,
+                    "name": "Ace of Swords",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 2,
+                    "name": "Two of Swords",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 3,
+                    "name": "Three of Swords",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 4,
+                    "name": "Four of Swords",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 5,
+                    "name": "Five of Swords",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 6,
+                    "name": "Six of Swords",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 7,
+                    "name": "Seven of Swords",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 8,
+                    "name": "Eight of Swords",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 9,
+                    "name": "Nine of Swords",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 10,
+                    "name": "Ten of Swords",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 11,
+                    "name": "Page of Swords",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 12,
+                    "name": "Knight of Swords",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 13,
+                    "name": "Queen of Swords",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                },
+                {
+                    "value": 14,
+                    "name": "King of Swords",
+                    "meaning_up": "",
+                    "meaning_rev": "",
+                    "desc": ""
+                }
+            ]
+        }
+    ]
+}
