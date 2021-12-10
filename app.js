@@ -2,9 +2,10 @@
 const fs = require('fs/promises')
 
 const express = require('express')
-const sharp = require('sharp')
 
 const root = __dirname
+const tarot = require('./src/tarot.js')(root)
+
 const port = process.env.PORT || 3000
 
 const app = express()
@@ -13,20 +14,22 @@ const router = express.Router()
 app.use('/v1', router)
 
 // GET /v1/draw?deck=<deck>
-router.get('/draw', async (req, res) => {
+router.get('/draw', (req, res, next) => {
   let deck_name = req.query.deck || 'bilibili'
-  let deck = JSON.parse(await fs.readFile(`${root}/static/deck/${deck_name}.json`))
-  let deck_type = JSON.parse(await fs.readFile(`${root}/static/deck_type/${deck.type}.json`))
-  let deck_data = Object.assign({}, deck_type, deck)
-  let cards = deck_data.suits.reduce((acc, suit) => {
-      return acc.concat(suit.cards.map(card => `${suit.name}-${card.value}`))
-  }, [])
-  let card = cards[Math.floor(Math.random() * cards.length)]
-  let img = sharp(`${root}/static/deck/${deck_name}/${card}.jpg`)
-  if (Math.random() < 0.5) { img.rotate(180) }
-  res.type('jpeg').send(await img.jpeg({ quality: 100 }).toBuffer())
+  let layout_name = req.query.layout || 'draw'
+  let width = parseInt(req.query.width || 0)
+  let height = parseInt(req.query.height || 0)
+  tarot.draw_card({ deck_name, layout_name, width, height })
+    .then(card => card.toBuffer())
+    .then(card => res.type('image/png').send(card))
+    .catch(err => next(err))
+})
+
+router.use((err, req, res, next) => {
+  console.error(err)
+  res.status(500).send(err.message)
 })
 
 app.listen(port, function () {
-  console.log(`Now listening at http://localhost:${port}`)
+  console.log(`Now listening at http://localhost:${port}/v1/draw`)
 })

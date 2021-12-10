@@ -1,7 +1,7 @@
 {
     "name": "Rider-Waite",
-    "back": "",
-    "blank": "",
+    "back": false,
+    "blank": false,
     "suits": [
         {
             "name": "major",

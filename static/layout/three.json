@@ -1,0 +1,12 @@
+{
+    "draws": [{
+        "reversable": true,
+        "position": [0, 200]
+    }, {
+        "reversable": true,
+        "position": [1000, 200]
+    }, {
+        "reversable": true,
+        "position": [2000, 0]
+    }]
+}
