@@ -2,6 +2,7 @@
 const fs = require('fs/promises')
 
 const express = require('express')
+const sharp = require('sharp')
 
 const root = __dirname
 const port = process.env.PORT || 3000
@@ -21,7 +22,9 @@ router.get('/draw', async (req, res) => {
       return acc.concat(suit.cards.map(card => `${suit.name}-${card.value}`))
   }, [])
   let card = cards[Math.floor(Math.random() * cards.length)]
-  res.sendFile(`${root}/static/deck/${deck_name}/${card}.jpg`)
+  let img = sharp(`${root}/static/deck/${deck_name}/${card}.jpg`)
+  if (Math.random() < 0.5) { img.rotate(180) }
+  res.type('jpeg').send(await img.jpeg({ quality: 100 }).toBuffer())
 })
 
 app.listen(port, function () {

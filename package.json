@@ -7,6 +7,7 @@
   },
   "author": "esphas <esphas@hotmail.com>",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "sharp": "^0.29.3"
   }
 }
