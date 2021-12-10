@@ -1,6 +1,7 @@
 {
     "draws": [{
-        "reversable": true,
+        "irreversable": false,
+        "putback": false,
         "includes": [],
         "excludes": [],
         "position": [0, 0]

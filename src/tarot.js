@@ -31,6 +31,7 @@ const tarot = exports = module.exports = function(root) {
         let deck = Object.assign({}, deck_type, rdeck)
         for ( let suit of deck.suits ) {
             for ( let card of suit.cards ) {
+                card.key = `${suit.name}-${card.value}`
                 card.path = path.join(dir_deck, name, `${suit.name}-${card.value}.jpg`)
             }
         }
@@ -51,7 +52,9 @@ const tarot = exports = module.exports = function(root) {
         let deck = await get_deck(deck_name || 'bilibili')
         let layout = await get_layout(layout_name || 'draw')
         // draw
-        let drawn = await Promise.all(layout.draws.map(async draw => {
+        let picked = []
+        let drawn = []
+        for ( let draw of layout.draws ) {
             let suits = null
             if ( draw.includes && draw.includes.length > 0 ) {
                 suits = deck.suits.filter(suit => draw.includes.includes(suit.name))
@@ -61,16 +64,20 @@ const tarot = exports = module.exports = function(root) {
                 suits = deck.suits
             }
             let cards = suits.reduce((acc, suit) => acc.concat(suit.cards), [])
+                .filter(card => !picked.includes(card.key))
             let card = cards[Math.floor(Math.random() * cards.length)]
             let img = sharp(card.path)
-            if ( draw.reversable ) {
+            if ( !draw.irreversable ) {
                 if (Math.random() < 0.5) { img.rotate(180) }
             }
-            let metadata = await img.metadata()
-            return {
-                img, metadata, position: draw.position || [0, 0],
+            if ( !draw.putback ) {
+                picked.push(card.key)
             }
-        }))
+            let metadata = await img.metadata()
+            drawn.push({
+                img, metadata, position: draw.position || [0, 0],
+            })
+        }
         if ( drawn.length <= 1 ) {
             return drawn[0].img.png()
         }
